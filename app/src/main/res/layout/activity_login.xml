@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginActivityImg"
+        android:src="@drawable/ic_icon_qr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:text="Lector De QR"
+        android:id="@+id/loginTv1"
+        android:layout_below="@+id/loginActivityImg"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/colorLight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_below="@id/loginTv1"
+        android:layout_above="@id/txtlogin"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtidentificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorLight"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorLight"
+            android:hint="Identificacion"
+            android:inputType="text|number"
+            android:textColor="@color/colorLight"
+            android:textColorHint="@color/colorLight" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLight"
+            android:layout_height="1dp">
+        </View>
+
+        <EditText
+            android:id="@+id/edtcontraseña"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableTint="@color/colorLight"
+            android:backgroundTint="@color/colorLight"
+            android:textColorHint="@color/colorLight"
+            android:textColor="@color/colorLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLight"
+            android:layout_height="1dp">
+        </View>
+
+        <Button
+            android:id="@+id/btnenviar"
+            android:text="login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/gradientebuttonligth"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnregistro"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight"
+            android:background="@drawable/gradientebuttonprimary"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Olvido su contraseña?"
+        android:id="@+id/txtlogin"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

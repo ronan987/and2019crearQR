@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etTextoParaCodigo = findViewById(R.id.etTextoParaCodigo);
+       etTextoParaCodigo = findViewById(R.id.etTextoParaCodigo);
 
         final ImageView imagenCodigo = findViewById(R.id.ivCodigoGenerado);
 
