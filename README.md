@@ -1,1 +1,1 @@
-# crear-codigos-qr-android
+# crear-codigos-QR
